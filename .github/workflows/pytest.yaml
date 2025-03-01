@@ -6,7 +6,7 @@ jobs:
   test:
 #    runs-on: ${{ matrix.os }}
 #
-    runs-on: ["ubuntu-latest","windoes-latest"]
+    runs-on: [ubuntu-latest, windoes-latest]
 #    strategy:
 #      matrix:
 #        os: [ubuntu-latest, macos-latest, windows-latest, windows-2019, windows-2022]

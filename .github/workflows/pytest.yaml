@@ -9,7 +9,9 @@ jobs:
 #    runs-on: ubuntu-latest
     strategy:
       matrix:
-        os: [ubuntu-latest, macos-latest, windows-latest, windows-2019, windows-2022]
+#        os: [ubuntu-latest, macos-latest, windows-latest, windows-2019, windows-2022]
+        os: [ubuntu-latest]
+
         python-version: ["3.9","3.10"]
         
 
@@ -30,4 +32,6 @@ jobs:
       -  name: Run pytest
          run: |
            python -m pytest -v
-           python -m pytest --cov
+           pytest --cov=<nome_do_seu_modulo> --cov-report term-missing --cov-report html
+#            python -m pytest --cov
+           

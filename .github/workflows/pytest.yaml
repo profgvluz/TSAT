@@ -29,7 +29,6 @@ jobs:
           
       - name: Run pytest
          run: |
-           python -m pytest -v
-#           pytest --cov --cov-report term-missing --cov-report html
-           python -m pytest --cov
+          python -m pytest -v
+          python -m pytest --cov
            

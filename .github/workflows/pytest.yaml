@@ -28,7 +28,7 @@ jobs:
           pip install pytest-cov
           
       - name: Run pytest
-         run: |
+        run: |
           python -m pytest -v
           python -m pytest --cov
            
